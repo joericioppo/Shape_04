@@ -28,6 +28,7 @@
 	
 	[self.view.layer addSublayer:rootLayer];
 
+
 	//Square Path
 	
 	squarePath	= CGPathCreateMutable();
@@ -55,6 +56,7 @@
 	
 	CGPathCloseSubpath(roundPath);
 	
+	
 	//Box Path
 	
 	boxPath = CGPathCreateMutable();
@@ -66,6 +68,7 @@
 	CGPathAddArcToPoint(boxPath, nil, center.x - 75.0, center.y - 75.0, center.x, center.y - 75.00, 10.0);
 	
 	CGPathCloseSubpath(boxPath);
+
 
 	//Create Shape
 	
@@ -114,14 +117,14 @@
 
 
 - (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
+
     [super didReceiveMemoryWarning];
 	
-	// Release any cached data, images, etc that aren't in use.
 }
 
 
-- (void)dealloc {
+- (void)dealloc 
+{
     [super dealloc];
 }
 
