@@ -101,7 +101,7 @@
 	
 	animation.duration = 2.0;
 	
-	animation.repeatCount = 1e100f;
+	animation.repeatCount = HUGE_VALF;
 	
 	animation.autoreverses = YES;
 	
